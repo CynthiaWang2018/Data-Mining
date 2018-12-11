@@ -1,0 +1,15 @@
+genres：把原来的题材提取出来，并用“|”分割
+keywords：把原来的关键词提取出来，并用‘|’分割
+year：提取了上映年份，并补全了数据
+production_companies：把原来的公司提取出来，并用‘|’分割
+production_countries：把原来的国家提取出来，并用‘|’分割
+runtime：补全了数据
+actor：从原来的cast提取了前三个主演，并用“|”分割
+director：从原来的crew中提取了导演
+genre_vec：把genres做成了特征向量
+director_vec:把director做成了特征向量
+actor_vec:把actor做成了特征向量
+keywords_vec:按照某视频（嘻嘻嘻~）方法，只留下了keyword（做同义词替换后）出现超过5词，并至少出现在三个电影中，
+其他的像是budget，revenue等值为零的脏值不知道怎么处理
+还有original_language，spoken_languages之类的因为基本都是英文其他太少就暂时没有处理
+tagline也还没有处理
